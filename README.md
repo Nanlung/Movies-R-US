@@ -67,8 +67,8 @@ The app will be available at `http://localhost:5173`.
 
 ### Trending Movies Page
 
-![Trending Movies Page](./screenshots/trending-page.png)
+## ![Trending Movies Page](./public/screenshots/trending-page.png)
 
 ### Favorites List
 
-## ![Favorites List](./screenshots/favorites-page.png)
+## ![Favorites List](./public/screenshots/favourites-page.png)
