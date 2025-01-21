@@ -71,4 +71,4 @@ The app will be available at `http://localhost:5173`.
 
 ### Favorites List
 
-## ![Favorites List](./screenshots/favorites-list.png)
+## ![Favorites List](./screenshots/favorites-page.png)
