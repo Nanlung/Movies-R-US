@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# **Movies R' US 🎥**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React app built with **Vite** and **Tailwind CSS**, where you can discover trending movies, search the movie database, and manage your favorite picks.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Features**
 
-## Expanding the ESLint configuration
+- 🌟 **Trending Movies**: Explore the latest trending movies updated daily.
+- 🔍 **Search**: Quickly find movies in the extensive database.
+- ❤️ **Favorites Management**: Save your favorite movies to your personalized list.
+- 🚀 **Lightning-Fast**: Built with **Vite** for exceptional speed and performance.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## **Tech Stack**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Frontend**: React (Vite), Tailwind CSS
+- **API**: [The Movie Database (TMDB) API](https://www.themoviedb.org/)
+- **State Management**: React Context API
+
+---
+
+## **Getting Started**
+
+Follow these steps to set up and run the app locally:
+
+### **1. Clone the Repository**
+
+```bash
+git clone https://github.com/nanlung/movies-r-us.git
+cd my-react-app
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### **2. Install Dependencies**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+### **3. Get Your TMDB API Key**
+
+1. Create an account at [The Movie Database (TMDB)](https://www.themoviedb.org/).
+2. Navigate to your account settings > API > Create API Key.
+3. Copy the API key for use in the app.
+
+### **4. Set Up Environment Variables**
+
+Create a `.env` file in the root directory and add your TMDB API key:
+
+```env
+VITE_TMDB_API_KEY=your_api_key_here
+VITE_BASE_URL=https://api.themoviedb.org/3
+```
+
+### **5. Run the App**
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`.
+
+---
+
+## **Screenshots**
+
+![Trending Movies Page](./screenshots/trending-page.png)
+
+- Favorites List  
+  ![Favourites](./screenshots/favourites-page.png)
+
+---
