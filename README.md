@@ -63,6 +63,10 @@ The app will be available at `http://localhost:5173`.
 
 ---
 
+## Deployments
+
+https://movies-r-us.vercel.app
+
 ## **Screenshots**
 
 ### Trending Movies Page
